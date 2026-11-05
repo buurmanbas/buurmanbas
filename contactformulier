@@ -24,7 +24,7 @@
         }
 
         h1 {
-            color: #2c6e49;
+            color: #21697C;
             text-align: center;
         }
 
@@ -79,7 +79,7 @@
 
 <div class="container">
 
-    <h1>Contact opnemen</h1>
+    <h1>Contactformulier - Buurman Bas</h1>
 
     <div class="info">
         <p>
