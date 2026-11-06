@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Buurman Bas</title>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,18 +53,26 @@
             resize: vertical;
         }
 
-        button {
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
             margin-top: 20px;
+        }
+
+        .buttons {
+            display: inline-block;
+            padding: 10px 20px;
             background: #25D366;
             color: white;
+            text-decoration: none;
             border: none;
-            padding: 14px 24px;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
         }
 
-        button:hover {
+        buttons:hover {
             background: #1da851;
         }
 
@@ -88,7 +95,6 @@
     </div>
 
     <form action="https://formspree.io/f/xaeevkqr" method="POST">
-
         <label for="naam">Naam</label>
         <input type="text" id="naam" name="naam" required>
 
@@ -103,10 +109,17 @@
             placeholder="Omschrijf kort waarmee ik u mogelijk kan helpen."
             required></textarea>
 
-        <button type="submit">Verstuur</button>
+        <div class="contact-buttons">
+            <button type="submit" class="buttons">
+                Verstuur
+            </button>
 
+            <a href="index.html" class="buttons">
+                Terug naar Home
+            </a>
+        </div>
     </form>
-
+    
 </div>
 
 </body>
