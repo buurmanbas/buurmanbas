@@ -61,6 +61,19 @@
         border-radius: 10px;
         margin-bottom: 30px;
     }
+    .checklist {
+    list-style: none;
+    padding-left: 0;
+    }
+
+    .checklist li {
+        margin-bottom: 8px;
+    }
+    .checklist li::before {
+    content: "✔ ";
+    color: #21697C;
+    font-weight: bold;
+    }
     .button {
         display: inline-block;
         margin-top: 20px;
@@ -76,7 +89,7 @@
     }
     footer {
         text-align: center;
-        background: #2b6777;
+        background: #21697C;
         color: white;
         padding: 20px;
         margin-top: 30px;
@@ -101,18 +114,19 @@
     <nav class="nav-menu"><a href="index.html">Home</a><a href="contactformulier.html">Contact</a></a></nav>
 </header>
 <section>
-    <P>Lichtschakelaars en stopcontacten vernieuwen.</P>
-    <P>Stopcontact bijplaatsen.</P>
-    <p>Keukenkastdeurtjes recht hangen.</p>
-    <p>Laminaat- of tegelvloer in toilet vernieuwen.</p>
-    <p>Muur sausen.</p>
-    <p>Kraan vervangen.</p>
-    <p>Verlichting boven aanrecht vervangen.</p>
-    <p>Kast monteren.</p>
-    <p>Nieuwe lamp ophangen.</p>
-    <p>Gordijnrails monteren.</p>
-    <p>Achterwand aanrecht betegelen en kitten.</p>
-
+    <ul class="checklist">
+        <li>Lichtschakelaars en stopcontacten vernieuwen.</li>
+        <li>Stopcontact bijplaatsen.</li>
+        <li>Keukenkastdeurtjes recht hangen.</li>
+        <li>Laminaat- of tegelvloer in toilet vernieuwen.</li>
+        <li>Muur sausen.</li>
+        <li>Kraan vervangen.</li>
+        <li>Verlichting boven aanrecht vervangen.</li>
+        <li>Kast monteren.</li>
+        <li>Nieuwe lamp ophangen.</li>
+        <li>Gordijnrails monteren.</li>
+        <li>Achterwand aanrecht betegelen en kitten.</li>
+    </ul>
     <div style="text-align:center;">
         <a class="button" href="index.html">
             Terug naar Home
